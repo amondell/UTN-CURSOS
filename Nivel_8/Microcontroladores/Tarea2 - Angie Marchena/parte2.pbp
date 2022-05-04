@@ -1,0 +1,28 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 30/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+
+
+trisb=0
+led var portb.0      ;puerto con led
+led1 var portb.1  ;puerto con led
+
+
+parpadeo
+    high    led   ;encender el led 
+    low     led1   ; apagar el segundo led
+    pause   700      ;esperar .7
+    toggle  led ;intercambio del primer led
+    toggle  led1 ;intercambio del segundo led
+    pause   700      ;esperar .7
+    
+    goto parpadeo      ;ir al parpadeo
+
+end

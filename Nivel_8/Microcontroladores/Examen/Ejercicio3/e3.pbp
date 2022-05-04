@@ -1,0 +1,21 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 21/10/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+CMCON = 7 ;convierte en digitales el puerto A
+
+puls VAR WORD ;variable puls con capacidad de 0 a 65535
+prog:
+    COUNT portb.0,10000,puls ;contar pulsos en el puerto B.0
+    LCDOUT $FE, 1 ;limpiar pantalla LCD
+    LCDOUT $FE,$82,"La Frecuencia es:" 
+    LCDOUT $FE,$C5, DEC puls," Hz" 
+
+    GOTO prog
+

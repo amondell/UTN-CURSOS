@@ -1,0 +1,31 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 18/11/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+DEFINE LCD_DREG PORTB   ; Utilizar 4 bits del puerto B para TX de datos
+DEFINE LCD_DBIT 4       ; Desde el bit b.4 hasta el bit  b.7
+DEFINE LCD_RSREG PORTB  ; Selección del puerto de registro
+DEFINE LCD_RSBIT 1      ; En el bit b.1
+DEFINE LCD_EREG PORTB   ; Utilizar el enable en el puerto b  
+DEFINE LCD_EBIT 2       ; En el bit b.2                        
+
+CMCON=7                         ; Convierte en digitales el puerto A
+revo VAR WORD                   ; Variable revo con capacidad de 0 a 65535
+
+inicio:
+
+count portb.0,1000,revO         ; Contar pulsos en el puerto B.0
+revo=revo*60                    ; Multiplicar por 60 para tener 1 minuto de RPM
+
+LCDOUT $FE,1,"Motor girando a:" ; Limpiar LCD y escribir
+LCDOUT $FE,$C3,DEC revo         ; Sacar el valor de la variable revo
+LCDOUT $FE,$C9,"RPM"            ; Ir a 2da línea casilla 9 y escribir RPM
+
+Goto Inicio
+end

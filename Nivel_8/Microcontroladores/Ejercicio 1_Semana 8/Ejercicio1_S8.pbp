@@ -1,0 +1,34 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 10/28/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+INCLUDE "modedefs.bas" ;incluyen los modos de comunicación
+botonA VAR portb.1 ;nombre botonA al puerto b.1 
+botonB VAR portb.2 
+botonC VAR portb.3 
+
+transmitir: 
+IF botonA=0 THEN envio1 ;si el botonA es presionado ir a envio1 
+IF botonB=0 THEN envio2 ;si el botonB es presionado ir a envio2 
+IF botonC=0 THEN envio3 ;si el botonC es presionado ir a envio3 
+GOTO transmitir 
+envio1: 
+SEROUT portb.0,N2400,["A"] ;enviar "A" a 24008N1 
+ PAUSE 500 
+ GOTO transmitir 
+envio2: 
+SEROUT portb.0,N2400,["B"] ;enviar "B" a 24008N1 
+ PAUSE 500 
+ GOTO transmitir 
+envio3: 
+SEROUT portb.0,N2400,["C"] ;enviar "C" a 24008N1 
+ PAUSE 500 
+ GOTO transmitir 
+ 
+END 

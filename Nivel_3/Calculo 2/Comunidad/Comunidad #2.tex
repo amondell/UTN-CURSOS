@@ -1,0 +1,176 @@
+\documentclass{article}
+  \usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+  %Paquetes adicionales
+  \usepackage{latexsym,amsmath,amssymb,amsfonts}
+  \usepackage[latin1]{inputenc}
+  %\usepackage{txfonts}
+  \usepackage[T1]{fontenc}\usepackage{ae,aecompl}
+  \usepackage{graphicx}
+  \usepackage[usenames]{color}
+  \usepackage[spanish]{babel} % Idioma español
+  \usepackage{tcolorbox}
+\usepackage{multirow}
+\tcbuselibrary{theorems}
+  %---------------comandos especiales-------------------------------
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\C}{\mathbb{C}}
+  \newcommand{\N}{\mathbb{N}}
+  \newcommand{\I}{\mathbb{I}}
+  \newcommand{\F}{\mathbb{F}}
+  %-----------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Comunidad aprendiente \#2}
+\end{center}
+ 
+\noindent {\sc Angie Marchena Mondell} \\
+{\sc Christopher Torrentes Delgado} \\
+{\sc María Mercedes rojas Alvarado} \\
+{\sc Rodolfo Marten  Guidotti} \\ 
+\begin{enumerate}
+\item \textbf{Primer Problema}\\
+\begin{enumerate}
+\item $\displaystyle \{b_n\}=\frac{n}{n^2+1}$
+
+\item Asumo que $b_{n+1} \leq b_n$
+\begin{align*}
+\frac{n+1}{(n+1)^2+1} &\leq  \frac{n}{n^2+1}\\
+(n+1)(n^2+1)  &\leq n[((n+1)^2+1)]\\
+n^3+n+n^2+1  &\leq n[(n^2+2n+2]\\
+n^3+n^2+n+1  &\leq n^3+2n^2+2n\\
+n^2+n+1  &\leq 2n^2+2n\\
+1 &\leq n^2+n
+\end{align*}
+Como se ve $1 \leq n^2+n$ es correcto ya que $n\geq 1$ por lo que $ n^2+n$ siempre es mayor que 1\\
+Se concluye que $b_{n+1} \leq b_n$ por lo que es \textbf{DECRECIENTE}.
+
+\item Se determina el limite
+\begin{align*}
+& \lim_{n \to \infty} b_n\\
+& \lim_{n \to} \frac{n}{n^2+1} = \frac{\infty}{\infty}\\
+& \lim_{n \to} \frac{n}{n(n+1/n)} = \frac{1}{\infty+0} = 0 \\
+\end{align*}
+Concluimos que es convergente a 0.
+\end{enumerate}
+\newpage
+\item \textbf{Segundo Problema}\\
+Dividimos en dos la expresión:
+$$\sum_{n=2}^\infty \frac{3}{n^2+3n} + \sum_{n=2}^\infty \frac{2^{n-1}}{3^{n+2}}$$
+Empezamos por la primera serie:
+$$\sum_{n=2}^\infty \frac{3}{n^2+3n}$$
+Separamos en fracciones parciales:
+\begin{align*}
+\frac{3}{n^2+3n} &= \frac{3}{n(n+3)}\\
+\frac{3}{n(n+3)} &= \frac{A}{n}+\frac{B}{n+3}\\
+3 &= A(n+3)+Bn\\
+\end{align*}
+Si $n=0$
+\begin{align*}
+3 &= 3A+0\\
+A &=1
+\end{align*}
+Si $n=-3$
+\begin{align*}
+3 &= 0+-3B\\
+B &=-1
+\end{align*}
+Por lo que reescribimos la suma como:
+$$\sum_{n=2}^\infty \left(\frac{1}{n} - \frac{1}{n+3} \right)$$
+Como se puede ver es una serie telescópica con $a_n=\frac{1}{n}$
+Tenemos como resultado:
+\begin{align*}
+\sum_{n=2}^\infty \left(\frac{1}{n} - \frac{1}{n+3} \right) &= a_1+a_2+a_3-\lim_{n \to \infty} a_{n+3}\\
+\sum_{n=2}^\infty \left(\frac{1}{n} - \frac{1}{n+3} \right) &= \frac{1}{2}+\frac{1}{3}+\frac{1}{4}-0\\
+\sum_{n=2}^\infty \left(\frac{1}{n} - \frac{1}{n+3} \right) &= \frac{13}{12}\\
+S_1=\frac{13}{12}
+\end{align*}
+Para la segunda expresión tenemos:
+\begin{align*}
+\sum_{n=2}^\infty \frac{2^{n-1}}{3^{n+2}} &=\sum_{n=2}^\infty \frac{2^{n}\cdot 2^{-1}}{3^n\cdot 3^2}\\
+&=\sum_{n=2}^\infty \left(\frac{2}{3}\right)^n\cdot\frac{1}{18}\\
+&=\sum_{n=2}^\infty \left(\frac{2}{3}\right)^n\\
+&=\frac{1}{18} \sum_{n=2}^\infty \left(\frac{2}{3}\right)^n\\
+\end{align*}
+Se puede ver que es una serie geométrica con $r=2/3$ y se ve claro que $|r|\leq 1$.
+Usamos la formula para averiguar la suma.
+\begin{align*}
+\sum_{n=k}^\infty r^n &= \frac{r^k}{1-r}\\
+\sum_{n=2}^\infty \left(\frac{2}{3}\right)^n &= \frac{(2/3)^2}{1-2/3}\\
+\sum_{n=2}^\infty \left(\frac{2}{3}\right)^n &= \frac{4}{3}\\
+\end{align*}
+Por lo que tenemos:
+\begin{align*}
+S_2&=\frac{1}{18} \sum_{n=2}^\infty \left(\frac{2}{3}\right)^n\\
+S_2&=\frac{1}{18}\cdot \frac{4}{3}\\
+S_2&= \frac{2}{27}
+\end{align*}
+Finalizamos sumando las dos partes:
+\begin{align*}
+S&=S_1+S_2\\
+S&=\frac{13}{12}+\frac{2}{27}\\
+S&=\frac{125}{108}
+\end{align*}
+\newpage
+\item \textbf{Tercer Problema}\\
+\begin{enumerate}
+\item $\displaystyle \sum_{n=1}^\infty \frac{n}{2n^3+1}$\\
+Podemos realizar una comparación en el limite de la siguiente manera:\\
+Como tenemos que $1 \ll 2n^3$.
+\begin{align*}
+\frac{n}{2n^3+1} \sim  \frac{n}{2n^3} = \frac{1}{2n^2}
+\end{align*}
+Podemos usar como serie $\displaystyle \sum_{n=1}^\infty \frac{1}{2n^2}$
+Que como sabemos $\displaystyle \sum_{n=1}^\infty \frac{1}{2n^2}$ converge ya que es una $p$ serie con $p>1$.\\
+Realizamos el limite:
+
+\begin{align*}
+\lim_{n \to \infty} \frac{\frac{n}{2n^3-1}}{\frac{1}{2n^2}} =& \lim_{n \to \infty} \frac{n\cdot 2n^2}{2n^3-1}\\
+=& \lim_{n \to \infty} \frac{ 2n^3}{2n^3-1}\\
+=& 1
+\end{align*}
+Como el resultado del limite es un numero positivo determinamos que la serie \textbf{CONVERGE}.\\
+\item $\displaystyle \sum_{n=1}^\infty \frac{\cos^2 (n)+1}{n^3}$\\
+
+Para este caso podemos usar comparación de la siguiente manera:
+\begin{align*}
+-1 \leq& \cos (n) \leq 1\\ 
+0 \leq& \cos^2 (n) \leq 1\\ 
+1 \leq& \cos^2 (n) +1 \leq 2\\
+\frac{1}{n^3} \leq& \frac{\cos^2 (n) +1}{n^3} \leq \frac{2}{n^3}\\
+\end{align*}
+Si tomamos como $\displaystyle a_n = \frac{\cos^2 (n)+1}{n^3}$ y $\displaystyle b_n = \frac{2}{n^3}$
+Verificamos la convergencia de $b_n$.
+\begin{align*}
+\sum_{n=1}^\infty \frac{2}{n^3} &= 2\sum_{n=1}^\infty \frac{1}{n^3} \\
+\end{align*}
+Como vemos es una $p$ serie con $p\geq 1$ por lo que si converge, y a su vez $a_n\leq b_n$ por lo que se concluye por \textbf{comparación directa} que $ a_n = \frac{\cos^2 (n)+1}{n^3}$ \textbf{CONVERGE}.
+\clearpage
+\item $\displaystyle \sum_{k=1}^\infty \left( \frac{k+1}{2k+1} \right)^{2k-1}$\\
+En este caso podemos usar el criterio de la \textbf{raíz}, de la siguiente manera:
+\begin{align*}
+\lim_{k \to \infty} \sqrt[k]{\left|\left( \frac{k+1}{2k+1} \right)^{2k-1}\right|} &= \lim_{k \to \infty} \sqrt[k]{\left( \frac{k+1}{2k+1} \right)^{2k}\cdot \left(\frac{k+1}{2k+1} \right)^{-1}} \\
+&= \lim_{k \to \infty}\left( \frac{k+1}{2k+1} \right)^{2}\cdot \sqrt[k]{\left(\frac{k+1}{2k+1} \right)^{-1}} \\
+&= \lim_{k \to \infty}\left( \frac{k+1}{2k+1} \right)^{2}\cdot \left(\frac{k+1}{2k+1} \right)^{-1/k}\\
+&= \left( \frac{1}{2} \right)^{2}\cdot \left(\frac{1}{2} \right)^{0}\\
+&= \frac{1}{4} 
+\end{align*}
+Como obtenemos $\frac{1}{4}$ vemos que $\frac{1}{4}<1$ por lo que la serie \textbf{CONVERGE}.\\
+
+\item $\displaystyle \sum_{n=1}^\infty \frac{5^n\cdot n!}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)}$\\
+Utilizando el criterio del cociente:
+\begin{align*}
+\lim_{n \to \infty} \frac{a_{n+1}}{a_n} &= \lim_{n \to \infty} \left| \frac{\frac{5^{n+1}\cdot (n+1)!}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)(3(n+1)-1)}}{\frac{5^n\cdot n!}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)}}\right|\\
+&= \lim_{n \to \infty} \frac{\frac{5^{n} \cdot 5\cdot n!(n+1)}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)(3n+2)}}{\frac{5^n\cdot n!}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)}}\\
+&= \lim_{n \to \infty} \frac{\frac{5(n+1)}{(3n+2)}}{\frac{1}{1}}\\
+&= \lim_{n \to \infty} \frac{5n+5}{3n+2}\\
+&=\frac{5}{3}\\
+\end{align*}
+Como se puede ver el valor del limite es $\frac{5}{3}$ que es mayor que 1, por lo que concluimos por el criterio del cociente que $\displaystyle \sum_{n=1}^\infty \frac{5^n\cdot n!}{2\cdot5\cdot8\cdot \cdot \cdot (3n-1)}$  \textbf{DIVERGE}.
+\end{enumerate}
+\end{enumerate}
+\end{document}

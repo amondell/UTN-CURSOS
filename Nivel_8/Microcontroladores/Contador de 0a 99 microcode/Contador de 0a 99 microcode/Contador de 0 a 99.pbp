@@ -1,0 +1,71 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : Esteban Carrillo                                  *
+'*  Notice  : Copyright (c) 2020                                *
+'*          : All Rights Reserved                               *
+'*  Date    : 13/12/2020                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+trisb = %0000000
+numero var portb   
+pausa var WORD
+pausa = 40
+trisa = 0
+cmcon = 7
+num VAR WORD
+num2 VAR WORD
+porta = 0
+x var word
+tiempo var word
+tiempo = 2
+
+n0 CON %1000000
+n1 CON %1111001
+n2 CON %0100100
+n3 CON %0110000
+n4 CON %0011001
+n5 CON %0010010
+n6 CON %0000010
+n7 CON %1111000
+n8 CON %0000000
+n9 CON %0010000
+
+secuencia var BYTE[10]
+SECUENCIA[0] = n0
+SECUENCIA[1] = N1
+SECUENCIA[2] = N2
+SECUENCIA[3] = N3
+SECUENCIA[4] = N4
+SECUENCIA[5] = N5
+SECUENCIA[6] = N6
+SECUENCIA[7] = N7
+SECUENCIA[8] = N8
+SECUENCIA[9] = N9
+
+
+ciclo:
+
+   num = num + 1
+  if num == 10 then 
+     num = 0
+     num2 = num2 + 1
+  endif
+  if num2 == 10 then num2 = 0
+ 
+ for x = 1 to tiempo 
+  high porta.0
+  LOW porta.1 
+  numero = secuencia[num]
+  pause pausa
+  low porta.0
+  high porta.1 
+  numero = secuencia[num2]
+  pause pausa
+  next
+  
+
+goto ciclo
+
+

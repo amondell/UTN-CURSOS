@@ -1,0 +1,185 @@
+\documentclass[letterpaper,12pt,addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage[top=1in, bottom=1in, left=0.75in, right=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{parskip}
+
+\usepackage{varwidth}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+
+
+
+%\usepackage{concmath}
+%\usepackage{kmath,kerkis}
+%\usepackage{eulervm}%like 2
+%\usepackage{sansmath}
+%\usepackage{sfmath}
+%\usepackage{sansmathaccent}
+%\usepackage{mathastext}
+%\usepackage{MnSymbol}
+%\usepackage{ccfonts}
+\usepackage{antpolt}%like 1
+%\usepackage{fouriernc}%like 3
+
+\usepackage[QX]{fontenc}%like 1
+%\usepackage[T1]{fontenc}
+
+\definecolor{ceruleanblue}{rgb}{0.16, 0.32, 0.75}
+\begin{document}
+ 
+Emanuel Esquivel Lopez - 2016133597\\
+\textbf{Problema 1:}\\
+
+{\color{ceruleanblue}
+Solución:\\
+\begin{enumerate}
+\item[a)] Se puede ver que la fuerza de empuje tiene la forma:
+$$\vec{F}_E = -\frac{mg}{d}y\,\hat{\jmath}$$
+Similar a la formula de la fuerza restauradora $F = -k\textbf{r}$.
+Por lo que se puede deducir que $$k = \frac{mg}{d}$$
+
+\item[b)] Podemos ver que la segunda ley de Newton
+$$\sum F_y = ma = -ky$$
+Al usar esto podemos realizar el cambio de $a$ como derivada de la posición:
+\begin{align*}
+ma &= -ky \\
+m\frac{dy^2}{dt^2} &= -ky\\
+\frac{dy^2}{dt^2}+ky &= 0 \\
+\frac{dy^2}{dt^2}+\frac{k}{m} y &= 0 \\
+\frac{dy^2}{dt^2}+\frac{g}{d} y &= 0 
+\end{align*}
+Puede compararse con el movimiento armónico simple que tiene por ecuación:
+$$\frac{dy^2}{dt^2}+ \omega^2 y = 0 $$
+
+\item[c)] La frecuencia angulas puede obtenerse fácil haciendo una comparación entre la ecuación obtenida y la del MAS.
+\begin{align*}
+\omega^2 &= \frac{g}{d}\\
+\omega &= \sqrt{\frac{g}{d}}
+\end{align*}
+Con esto podemos calcular la frecuencia $f$ y el periodo $T$:
+\begin{align*}
+f &= \frac{\omega}{2\pi}\\
+f &= \frac{1}{2\pi}\sqrt{\frac{g}{d}}\\ 
+T &= \frac{2\pi}{\omega}\\
+T &= 2\pi \sqrt{\frac{d}{g}}\\
+\end{align*}
+
+
+\item[d)] Tenemos como datos iniciales $y_0$ = 1 cm y $v=0$ m/s\\
+Calculamos $A$
+\begin{align*}
+A &= \sqrt{y_0^2+\frac{v_0^2}{\omega^2}}\\
+A &= y_0
+\end{align*}
+Ahora el angulo de fase:
+\begin{align*}
+\phi &= \arctan\left( -\frac{v_0}{y_0\omega} \right)\\
+\phi &= 0
+\end{align*}
+La ecuación de la posición que es la solución de la ecuación diferencial es:
+\begin{align*}
+y(t) &= A\cos(\omega t + \phi)\\
+y(t) &= y_0\cos\left( \sqrt{\frac{g}{d}}t \right)
+\end{align*}
+
+
+La ecuación de la velocidad es $y'$ y la aceleración $y''$
+
+
+\begin{align*}
+v(t) &= -A\omega \sen(\omega t + \phi)\\
+v(t) &= -y_0\sqrt{\frac{g}{d}} \sen\left( \sqrt{\frac{g}{d}}t \right)
+\end{align*}
+\begin{align*}
+a(t) &= -A\omega^2 \cos(\omega t + \phi)\\
+a(t) &= -y_0\frac{g}{d} \cos\left( \sqrt{\frac{g}{d}}t \right)
+\end{align*}
+
+
+\item[e)] Los valores máximos de posición, velocidad y aceleración son los siguientes:
+\begin{align*}
+x_{\max} &= A\\
+x_{\max} &= |y_0|\\
+v_{\max} &= A\omega\\
+v_{\max} &= |y_0|\sqrt{\frac{g}{d}}\\
+a_{\max} &= A\omega^2\\
+a_{\max} &= |y_0|\frac{g}{d}
+\end{align*}
+
+\item[f)] Luego de $t=3$ s podemos calcular el valor de $y,v,a$.
+
+\begin{align*}
+y(3) &= y_0\cos\left( \sqrt{\frac{g}{d}}\cdot 3 \right)\\
+v(3) &= -y_0\sqrt{\frac{g}{d}} \sen \left( \sqrt{\frac{g}{d}}\cdot 3 \right)\\
+a(3) &= -y_0\frac{g}{d} \cos\left( \sqrt{\frac{g}{d}} \cdot 3 \right)
+\end{align*} 
+Para el valor de $y$ debemos tomar en cuenta que el corcho estaba sumergido 3.25 cm
+\item[g)] La energía cinética se describe con la formula:
+\begin{align*}
+K &=\frac{1}{2}mv^2\\
+K &=\frac{1}{2}m y_0^2 \frac{g}{d} \sen^2\left( \sqrt{\frac{g}{d}}t \right)
+\end{align*}
+
+
+La energía potencial:
+
+\begin{align*}
+U &=\frac{1}{2}kx^2\\
+U &=\frac{1}{2} \frac{mg}{d} y_0^2\cos^2\left( \sqrt{\frac{g}{d}}t \right)
+\end{align*}
+Cuando $U = \frac{1}{2}K$?
+\begin{align*}
+U &= \frac{1}{2}K\\
+\frac{1}{2} \frac{mg}{d} y_0^2\cos^2\left( \sqrt{\frac{g}{d}}t \right)&= \frac{1}{4}m y_0^2 \frac{g}{d}  \sen^2\left( \sqrt{\frac{g}{d}}t \right)\\
+\cos^2\left( \sqrt{\frac{g}{d}}t \right)&= \frac{1}{2}   \sen^2\left( \sqrt{\frac{g}{d}}t \right)\\
+\frac{\cos^2\left( \sqrt{\frac{g}{d}}t \right)}{\cos^2\left( \sqrt{\frac{g}{d}}t \right)} &= \frac{1}{2}\frac{\sen^2\left( \sqrt{\frac{g}{d}}t \right)}{\cos^2\left( \sqrt{\frac{g}{d}}t \right)}\\
+1 &= \frac{1}{2}\tan^2 \left( \sqrt{\frac{g}{d}}t \right)\\
+2 &= \tan^2 \left( \sqrt{\frac{g}{d}}t \right)\\
+\sqrt{2} &= \tan \left( \sqrt{\frac{g}{d}}t \right)\\
+\arctan \left( \sqrt{2} \right) &= \sqrt{\frac{g}{d}}t\\
+t &= \arctan \left( \sqrt{2} \right) \cdot \sqrt{\frac{d}{g}}
+\end{align*}
+Con el valor anterior se evalua en $y\left(\arctan \left( \sqrt{2} \right) \cdot \sqrt{\frac{d}{g}}\right) $
+
+\item[h)] Es el valor de $t$ obtenido anteriormente.
+$$t = \arctan \left( \sqrt{2} \right) \cdot \sqrt{\frac{d}{g}}$$
+
+\end{enumerate}
+
+\textbf{NOTA:} El valor de $y_0$ en las ecuaciones es negativo ya que esta pos debajo del equilibrio
+}
+
+\clearpage
+
+\textbf{Problema 1:}\\
+
+{\color{ceruleanblue}
+Solución:\\
+\begin{enumerate}
+\item[a)] Al tener la función de onda $y(t,x) = A \sen(kx \pm \omega t)$, podemos comprobar que es solucion de la ecuación de onda de la siguiente manera.
+\begin{align*}
+y &= A \sen(kx \pm \omega t)\\
+\frac{\partial y}{\partial x} &= Ak\cos(kx \pm \omega t)\\
+\frac{\partial^2 y}{\partial x^2} &= -Ak^2\sen(kx \pm \omega t)
+\end{align*}
+\begin{align*}
+y &= A \sen(kx \pm \omega t)\\
+\frac{\partial y}{\partial t} &= A\omega \cos(kx \pm \omega t)\\
+\frac{\partial^2 y}{\partial t^2} &= -A\omega^2\sen(kx \pm \omega t)\\
+\frac{\partial^2 y}{\partial t^2} &= -Av^2k^2\sen(kx \pm \omega t)\\
+\end{align*}
+Si sustituimos en la ecuación de onda tenemos:
+\begin{align*}
+\frac{\partial^2 y}{\partial t^2} &= v^2 \frac{\partial^2 y}{\partial x^2} \\
+-Av^2k^2\sen(kx \pm \omega t) &= v^2 \cdot -Ak^2\sen(kx \pm \omega t)
+\end{align*}
+Como se ve son exactamente iguales a ambos lados, por lo tanto se comprueba que $y(t,x) = A \sen(kx \pm \omega t)$ es solución de la ecuación de onda
+\end{enumerate}
+}
+\end{document}

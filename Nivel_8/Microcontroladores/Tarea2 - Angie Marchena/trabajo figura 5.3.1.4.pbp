@@ -1,0 +1,22 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 30/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+cmcon=7
+progra:
+
+if portb.3=0 then encender
+    goto progra
+encender 
+    high porta.1
+    pause 1000
+    low porta.1
+    goto progra
+end
+

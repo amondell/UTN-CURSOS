@@ -1,0 +1,26 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 10/28/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+INCLUDE "modedefs.bas" ;incluyen los modos de comunicación 
+ledr VAR portb.1 ;nombre ledr al puerto b.1 
+leda VAR portb.2 
+ledv VAR portb.3 
+datos VAR BYTE ;variable para almacenar el dato serial 
+HIGH ledr ;led para saber si ya arrancó el PIC 
+PAUSE 500 
+LOW ledr 
+recibir: 
+SERIN portb.0, N2400, datos ;recibir dato serial y guardar en datos 
+IF datos="A" THEN HIGH ledr :PAUSE 1000 ;si es A encender ledr y esperar 1 seg. 
+IF datos="B" THEN HIGH leda :PAUSE 1000 
+IF datos="C" THEN HIGH ledv :PAUSE 1000 
+LOW ledr :LOW leda : LOW ledv 
+GOTO recibir 
+END

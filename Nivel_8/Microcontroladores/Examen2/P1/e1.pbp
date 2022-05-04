@@ -1,0 +1,20 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 21/10/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+DEFINE osc 4
+inicio:
+    trisb=%00000000 ;INDICA QUE LOS PINES B CORRESPONDEN A PUERTOS DE SALIDA
+
+leds1:              ;INICIO DEL PROGRAMA   
+    portb=%00000001 ; ENCIENDE RB0 y led 0
+    pause 500       ;PAUSA EL ENCENDIDO .5 SEGUNDOS
+
+    
+    
+end

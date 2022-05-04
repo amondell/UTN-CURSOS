@@ -1,0 +1,43 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 16/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+x var byte ;crea un espacio en la memoria
+leds var portb   ; hacer el puerto b como leds
+cmcon=7          ;puertos como salidas
+trisb=0         ;puertos b activos
+leds=1          ;carga el valor inicial de 0 a las variables leds
+pulso var porta.1  ;nombrar puerto A1 como pulso
+boton var porta.2   ;nombrar puerto a2 como boton
+
+
+inicio:
+if pulso=0 then sica
+goto inicio
+sica: 
+    for x=1 to 7
+    leds=leds <<1
+    pause 300 ;espera .3 segundos
+    next 
+    high portb.7    ;pone en alto el puerto b7
+inicio2:
+    if boton=0 Then angie
+    goto inicio2     ;regresa a inicio2
+angie:
+    for x=1 to 7
+    leds=leds >>1
+    pause 300
+    next
+    high portb.0
+    
+goto inicio
+end
+    
+
+    

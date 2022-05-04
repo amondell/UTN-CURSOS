@@ -1,0 +1,1272 @@
+@import url(/c/capva.css);
+
+body {
+	margin: 0; padding: 0 0 1px 0; border: 0;
+	background: #fff;
+	color: #666;
+	font: 12px/16px Arial, Helvetica, sans-serif;
+	line-height: 16px;
+}
+#container {
+	width: 80%;
+	margin: auto;
+}
+#copySignin {
+	margin-right: 250px;
+}
+#topnav {
+	height: 100px;
+	background: #fff url(/images/navigation/blue_top2.gif) repeat-x;
+}
+#topnav2 {
+	height: 100px;
+	background: #fff url(/images/navigation/blue_top2.gif) repeat-x;
+}
+
+#logo {
+	padding-top: 20px;
+}
+#logo a {
+	border: 0;
+}
+#logoWeb2Layer {
+	padding: 20px 0 0 30px;
+}
+#maincontent {
+	margin-top: 5px;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 1em 0 0 0;
+	font-size: 18px;
+	padding-bottom: .25em;
+	line-height: 1.5em;
+	color: #333;
+}
+#schedule h1 {
+	margin: 5px 0 0 0;
+}
+#current h1, #examHistory h1, #details h1 {
+	margin-top: 5px;
+}
+h2 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: -.25em;
+}
+#current h2 {
+	margin: 2em 0 .5em 0;
+}
+h3 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: .5em;
+}
+h4 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 1.25em 0 0 0;
+	color: #333;
+}
+p {
+	margin: .5em 0 .5em 0;
+	font-size: 12px;
+}
+a:link, a:visited, A:link, A:visited {
+	border-bottom:1px dotted;
+	text-decoration:none;
+}
+a:link {
+	color: #004374;
+}
+a:visited {
+	color:#cf8b2d;
+}
+a:hover {
+	text-decoration: none;
+	border-bottom-style:solid;
+}
+a:link.noLine, a:hover.noLine, a:visited.noLine, a.noLine  {
+	border-bottom: 0;
+}
+
+#examHistory a, #details table a {
+	border-bottom: none;
+	text-decoration: underline;
+}
+
+/* Sign in Styles */
+#signin {background: #fff url(/images/navigation/blue_top2.gif) repeat-x}
+#signinArea {
+	background: url(/images/gradients/yellow200.jpg) repeat-x bottom;
+	margin-left: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	float: right;
+	width: 230px;
+}
+#signinArea_UU {
+	background: url(/images/gradients/yellow200.jpg) repeat-x bottom;
+	margin-left: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	float: right;
+}
+
+#signinArea td {
+	padding: 8px 5px 8px 0;	
+	width: 50%
+}
+
+#signinArea td.label{
+	text-align: right;
+	padding-right: 5px;
+}
+
+#signinArea_UU td{
+	padding: 8px 0 8px 0;
+}
+
+#signinArea_UU td.label{
+	text-align: right;
+	padding-right: 5px;
+  	max-width: 155px;
+  	_width:155px; /* for ie6 */
+}
+
+#signinArea_UU td.input {
+	white-space: nowrap;
+}
+
+#signinArea_UU td.input input.autosize{
+	width: 97%;
+	.width: 96%; /* for ie6 & 7 */
+}
+
+.username { margin: 0 0 5px 0;}
+.forgotUN { margin: 8px 0 5px 0;}
+.createAccount { margin: 8px 0 0 0;}
+.password { margin: 10px 0 5px 0;}
+.signinButton { margin: 10px auto 0 auto; width: 90px;}
+#signin h2 {
+	font-weight: bold;
+	margin: .5em 0 .5em 0;
+	font-size: 1.25em;
+	color: #333;
+}
+.rightAlign {
+	text-align: right;	
+}
+
+
+
+	/*  Start Application Left Navigation Styles */
+
+
+.cannot {
+	background-color : #fff;
+	color : #c00;
+	text-align : center;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+}
+
+#web2NavLayer {
+	margin-top: 15px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	margin-right: 5px;
+}
+
+#web2NavLayer td {
+	width: 150px;
+	height: 27px;
+	padding-left: 35px;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+}
+#web2NavLayer a {
+	color: #666;
+	text-decoration: none;
+	border: none;
+	display: block;
+}
+
+.link1_off {
+	background: url(/pvueImages/webII/leftnav/link1_off.gif) no-repeat;
+}
+
+.link1_on {
+	background: url(/pvueImages/webII/leftnav/link1_on.gif) no-repeat;
+}
+
+.link2_off {
+	background: url(/pvueImages/webII/leftnav/link2_off.gif) no-repeat;
+}
+
+.link2_on {
+	background: url(/pvueImages/webII/leftnav/link2_on.gif) no-repeat;
+}
+
+.link3_off {
+	background: url(/pvueImages/webII/leftnav/link3_off.gif) no-repeat;
+}
+
+.link3_on {
+	background: url(/pvueImages/webII/leftnav/link3_on.gif) no-repeat;
+}
+
+.link4_off {
+	background: url(/pvueImages/webII/leftnav/link4_off.gif) no-repeat;
+}
+
+.link4_on {
+	background: url(/pvueImages/webII/leftnav/link4_on.gif) no-repeat;
+}
+
+.link5_off {
+	background: url(/pvueImages/webII/leftnav/link5_off.gif) no-repeat;
+
+}
+
+.link5_on {
+	background: url(/pvueImages/webII/leftnav/link5_on.gif) no-repeat;
+}
+
+.link6_off {
+	background: url(/pvueImages/webII/leftnav/link6_off.gif) no-repeat;
+}
+
+.link6_on {
+	background: url(/pvueImages/webII/leftnav/link6_on.gif) no-repeat;
+}
+
+
+
+/*  Start Pop-Up Info Windows */
+
+table#info {
+	border: 1px solid #666;
+	margin: 10px;
+}
+
+table#info th {
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+	padding: 3px 0;
+	vertical-align: top;
+}
+
+table#info td {
+	padding: 3px;
+	vertical-align: top;
+}
+
+table#info td p {
+	font-size: 12px;
+}
+
+table#info td.left {
+	text-align: right;
+	font-weight: bold;
+	width: 30%;
+	vertical-align: top;
+}
+
+table#info td.right {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: top;
+}
+table#info td.center {
+	text-align: center;
+	font-weight: normal;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+
+/*  Start Main Content Application */
+
+#apptopcurve {
+	background: url(/pvueImages/webII/apptopcurve.gif) no-repeat;
+	height: 60px;
+}
+
+#appmain {
+	padding: 5px;
+}
+
+#appbox {
+	border: thin solid #333;
+}
+
+#sponsorlogo {
+	float: right;
+}
+
+#appbreadcrumb {
+	font-size: 10px;
+	text-align: right;
+	padding: 5px;
+}
+
+/* CALENDAR STYLES */
+#calendar {
+	width: 170px;
+	margin: 0 auto;
+}
+table#calendar {
+	background-color: #eee;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#calendar td.select {
+	border-right: 1px solid #000;
+	background-color: #fff;
+}
+
+#calendar th, #calendar td {
+	width: 20px;
+	height: 20px;
+	font-size: 11px;
+	padding: 0;
+}
+
+#calendar th {
+	color: #fff;
+	background-color: #339;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	border-top: 1px solid #000;
+}
+
+#calendar td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 1px;
+	background-repeat: no-repeat;
+}
+
+#calendar a.open:link, #calendar a.open:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+#calendar a.open:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+
+#calendar span.closed {
+	background-image: url(/pvueImages/webII/calendar/closed.gif);
+    background-repeat: no-repeat;
+	 /*height: 20px;
+	 width: 20px;*/
+	 background-position: center;
+}
+
+#calendar span.unavailable {
+	background-color: #eee;
+}
+
+#calendar span.selected {
+	background-image: url(/pvueImages/webII/calendar/selected.gif);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	background-position: center;
+}
+
+#calendar span.today {
+	font-weight: bold;
+}
+
+#calendar th a {
+	color: #fff;
+}
+
+
+.blueinfo {
+	padding : 5px;
+	color : #06C;
+}
+
+.blueback {
+	color:#fff;
+	background-color: #06C;
+	padding: 5px;
+}
+
+.bluehor {border-right: 1px solid #06c;}
+
+.blueinfoheader {
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	background-color: #333;
+	padding: 5px;
+}
+
+.blueline{
+	background-color : #06c;
+	width : 1px;
+	height : 1px;
+}
+.divider {
+	background-color : #ccc;
+	width : 100%;
+	height : 1px;
+}
+
+.grayback {
+	color:#000;
+	background-color: #eee;
+	padding: 5px;
+}
+
+.topborder {
+	background: url(/pvueImages/webII/borders/top_vert_bkground_spacer_n_.gif) repeat-x;
+	height: 10px;
+	padding-bottom: 5px;
+}
+
+.rightborder {
+	background: url(/pvueImages/webII/borders/top_stripe_bkground.gif) repeat-y;
+	width: 15px;
+}
+
+.appinstructionsgray {
+	color: #000;
+	background-color: #eee;
+}
+
+.required {
+	color: #933;
+}
+
+
+
+.apptidbits {
+	color: #69c;
+}
+
+
+.appmain {
+	padding: 5px;
+}
+
+.appsectiontitle {
+	font-weight: bold;
+}
+
+.apptablehead {
+	background-color: #06c;
+	font-size: .9em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+.appheaders {
+	background-color: #eee;
+	font-weight: bold;
+	font-size: .75em;
+}
+
+
+.blueline{
+	background-color : #06c;
+	width : 1px;
+	height : 1px;
+}
+
+.copy{
+	font-size : 10px;
+	text-align : center;
+}
+
+
+
+
+
+
+	/*  Warning Style 	*/
+
+.warning {
+	color: #c00;
+	font-weight: bold;
+}
+
+	/*  Set up general page elements 	*/
+
+img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+ul li {
+	list-style-type: square;
+}
+
+ol li {
+	margin-bottom: 1em;
+}
+td {
+	font-size: 12px;
+}
+
+
+
+a.cannotlink:link {
+	color:#fff;
+	text-decoration : underline
+}
+
+a.cannotlink:hover {
+	color:#fff;
+	text-decoration : none
+}
+
+a.cannotlink:visited {
+	color:#fff;
+	text-decoration : underline
+}
+
+
+
+
+
+
+/* APPLICATION COPYRIGHT SECTION - BOTTOM FRAME */
+#copyright {
+	text-align: center;
+	margin-top: 10px;
+	border-top: 1px dotted #ccc;
+	padding-top: 2px;
+	font-size: 11px;
+	clear: both;
+}
+#copyright a {
+	margin: 0 3px;
+}
+
+/* APPLICATION VERTICAL BLUE LINE RIGHT SIDE */
+#bluevert {
+	background: #fff;
+	height: 100%;
+	width: 5px;
+}
+
+/* APPLICATION Horizontal BLUE LINE TOP */
+/*#bluehoriz {
+	background: #fff url("/pvueImages/webII/borders/top_stripe_bkground.gif") repeat-x top;
+	width: 100%;
+}*/
+
+/* CLIENT LOGO TOP FRAME */
+
+#clientlogo {
+	float: right;
+}
+
+
+/* Shared Styles */
+#quickresults, #orderitem, #payment, #error, #registrationQuestions {
+	padding: 5px;
+	width: 98%;
+}
+
+#schedule h2 {
+	padding: 5px 0;
+	margin: 0;
+}
+#profile h2, #updateprofile h2 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+#appointmentarea h2 {
+	margin-bottom: -5px;
+	margin-top: -5px;
+}
+
+#details h3, #quickresults h3, #profile h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+
+#current table, #details table, #quickresults table, #confirmation table, #profile table, #examHistory table {
+	border: 1px solid #999;
+}
+
+#details table td, #quickresults table td, #orderitem table td, #confirmation table td, #registrationQuestions table td {
+	padding: 3px;
+	vertical-align: top;
+}
+#details table {
+	clear: both;
+	margin-top: 5px;
+}
+
+#details table td.left {
+	font-weight: bold;
+	background: #eee;
+	color: #000;
+	text-align: right;
+	width: 20%;
+}
+#current table th, #profile table th, #examHistory table th {
+	padding: 5px;
+	background: #999;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+#profile li {
+	margin-bottom: .5em;
+}
+
+/* Current Activity Styles */
+
+#current table td, #examHistory table td {
+	padding: 5px;
+	vertical-align: top;
+	border-top: 1px solid #ccc;
+}
+#current table td.exception {
+	background: #fff;
+	color: #c00;
+	text-align: center;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+}
+#current table td.exception a:link, #current table td.exception a:visited {
+	color: #c00;
+}
+#current table td.exception a:hover {
+	text-decoration: none;
+}
+#current table a {
+	border: 0;
+	text-decoration: underline;
+}
+
+
+/* Details Styles */
+#details ul {
+	margin-left: 1.5em;
+	padding-left: 1.5em;
+	margin-top: .5em;
+}
+#details li {
+	margin-bottom: 1em;
+}
+
+#details table th {
+	padding: 3px;
+	background: #333;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/* Quick Results Styles */
+#quickresults table td.left {
+	font-weight: bold;
+	color: #000;
+	text-align: right;
+	width: 20%;
+}
+#quickresults table table {
+	border: 0;
+}
+#quickresults .buttonright {
+	text-align: right;
+	margin-top: 10px;
+}
+
+/* Lightbulb Styles */
+.lightbulb {
+	margin-top: 5px;
+	font-size: 11px;
+}
+
+
+/* Schedule Styles */
+#schedule h3, #payment h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+}
+
+table#apptable, table#resulttable {
+	border: 0;
+	background: #eee;
+}
+
+
+#apptable a, #resulttable a {
+	border: 0;
+	text-decoration: none;
+}
+table#apptable td, table#apptable th, table#resulttable td, table#resulttable th {
+	padding: 3px 5px;
+	vertical-align: top;
+	border-bottom: 2px solid #fff;
+}
+
+
+table#apptable th, table#resulttable th {
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+	/*border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;*/
+	background: #ccc;
+	color: #000;
+}
+
+#apptable th a {
+	border: 0;
+}
+
+#apptable tr.current, #resulttable tr.current {
+	/*background: #ccc;*/
+	background: #f6ecb7;
+}
+
+.nobottomborder {
+   border-bottom: 0;
+}
+
+#apptable .nobottomborder {
+    border-bottom: 0;
+    vertical-align: top;
+}
+
+#resulttable td a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+#resulttable td a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#apptable td a:hover, #resulttable td a:hover {
+	/*color: #cf8b2d;*/
+	text-decoration: none;
+}
+#apptable td a:visited {
+	color: #004374;
+}
+
+table#verify {
+	border: 0;
+	margin: 10px 0;
+}
+
+table#verify  td {
+	font-size: 12px;
+	padding: 3px;
+	vertical-align: top;
+}
+
+table#verify td.left {
+	font-weight: bold;
+	color: #000;
+	text-align: right;
+}
+
+.gray {
+	background: #eee;
+	padding: 2px;
+}
+
+
+/* Appointment Area */
+#appointmentarea {
+	margin-top: 5px;
+	border-top: 3px solid #999;
+	width: 98%;
+	padding-top: 5px;
+	margin-right: 20px;
+}
+.examName {
+	float: right;
+	font-size: 11px;
+}
+
+.underline {
+	border-bottom: 1px solid #aaa;
+	padding-top: 1px;
+}
+#choosecenter h3 {
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+#choosedate h3 {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+#chooseappt h3 {
+	margin-bottom: 0;
+	padding-top: 1px;
+}
+
+#choosecenter {
+	float: left;
+	width: 25%;
+}
+#choosecenter table {
+	border: 1px solid #aaa;
+	margin-top: 10px;
+}
+#choosecenter td {
+	vertical-align: top;
+	padding-bottom: 5px;
+	font-size: 11px;
+}
+#choosedate a {
+	border: 0;
+}
+#choosedate #month {
+	margin-left: 1px;
+	display: inline;
+}
+#choosedate #month select option {
+	width: 60px;
+}
+
+#chooseappt {
+	float: right;
+	width: 32%;
+	margin-right: 10px;
+}
+#chooseappt select {
+	font: 12px verdana, arial, helvetica, sans-serif;
+}
+#chooseappt .submitButton {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	float: none;
+	text-align: left;
+}
+.submitButton a {
+	border: 0;
+}
+
+#chooseappt div.box {
+	border: 1px solid #aaa;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+
+/* Payment Area */
+
+#payment table {
+	border: 0;
+	margin: 10px 10px 10px 30px;
+}
+
+#payment table td {
+	padding: 2px 5px;
+	vertical-align: top;
+}
+
+.alertbox {
+	border: 1px solid #933;
+	padding: 5px;
+	float: left;
+	width: 175px;
+	margin: 10px 10px 10px 0;
+	color: #933;
+}
+
+.dynamicAlertBox {
+	border: 1px solid #933;
+	padding: 5px;
+	float: left;
+	margin: 0px;
+	color: #933;
+}
+
+/* Promotions Area */
+#promotionsarea {
+	border: 2px solid #999;
+	padding: 5px;
+	width: 90%;
+	margin-top: 10px;
+}
+
+#promotionsarea table {
+	border: 0;
+	margin: 10px 0;
+}
+
+#promotionsarea table td {
+	padding: 2px 5px;
+	vertical-align: top;
+	text-align: center
+}
+
+/* Update Profile Area */
+#profile table table { border: 0; margin-bottom: .5em;}
+#profile table table th {
+	border-top: 1px solid #06c;
+	background: #eee;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+}
+.alternateheader {
+	border-top: 1px solid #06c;
+	background: #eee;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+}
+#profile table table td {
+	padding: 0;
+	vertical-align: top;
+}
+#profile table td {
+	padding: 5px;
+	vertical-align: top;
+}
+#profile table table.createProfileTable {
+	border: 1px solid #999;
+	margin: 5px 0;
+}
+.createProfileTable h2 {
+	margin: 0;
+	border-bottom: 1px solid #333;
+}
+.createProfileTable td {
+	vertical-align: top;
+}
+
+/* Payment Styles */
+#payment h1 {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+#payment h2 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+/* Misc. Styles */
+hr {width: 75%; text-align: center; height: 1px; color: #ccc; display: block;}
+.floatright {float: right; margin-left: 10px;}
+.normal {font-weight: normal}
+
+#orderitemquestions {
+	border: 2px solid #06c;
+	padding: 5px;
+	width: 90%;
+}
+
+/* Appointment Search - Frameset */
+/* Center Search */
+
+#apptCenterSearch h3, #apptDateSearch h3, #apptPickTime h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0;
+	height: 20px;
+}
+#apptCenterSearch th, #apptDateSearch th {
+	height: 30px;
+	border-bottom: 1px solid #aaa;
+	font-size: 12px;
+	font-weight: bold;
+	color: #339;
+	text-align: left;
+	padding: 5px;
+}
+#apptCenterSearch td {
+	padding: 5px;
+	vertical-align: top;
+}
+#apptCenterSearch #centers, #apptPickTime #bordered {
+	border: 1px solid #aaa;
+}
+#centers td, #apptPickTime #bordered td {
+	padding: 2px;
+}
+/* Appointment Search (calendar)
+#apptDateSearch .month {
+	margin-left: 20px;
+}*/
+/* Select date/time
+#apptPickTime th {
+	text-align: right;
+	font-size: 10px;
+	font-weight: normal;
+	height: 30px;
+	border-bottom: 1px solid #aaa;
+	padding: 5px;
+}*/
+
+/* Date toggle */
+#toggle {
+	float: right;
+	font-size: 11px;
+}
+
+.submitButton {
+	/*padding-top: 10px;*/
+	padding-bottom: 5px;
+	text-align: right;
+	float: right;
+}
+
+.topprint {
+	font-size: 11px;
+	text-align: right;
+	margin-right: 2%;
+}
+
+
+/* RegSched & Seat Search styles added */
+
+
+#selected, #search2, #centerlist, #examlist {
+	background: #eee;
+	margin-right: 10px;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+table#searcharea {
+	padding: 0;
+}
+
+td#country table th {
+	background: #ccc;
+	color: #000;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+}
+
+td#country table th, td#country table td {
+	padding: 3px 5px;
+}
+
+
+.subinstructions {
+	padding: 3px 0;
+}
+
+form {
+	margin: 0;
+	padding: 3px 5px;
+}
+#proximitySearch select, #proximitySearch  {
+	font: 12px arial, helvetica, sans-serif;
+}
+
+#centerlist {
+	height: 170px;
+	overflow: auto;
+	padding-bottom: 5px;
+}
+#selected {
+	height: 110px;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+#examlist {
+	height: 260px;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+
+#divList {
+	height: 100px;
+	overflow: auto;
+	border: 1px solid #000;
+	padding: 3px;
+	margin-top: 10px;
+	/*background: #fff;*/
+	color: #000;
+	width: 98%;
+}
+#divList a {
+	border: 0;
+	color: #333;
+}
+
+#apptListDateChangeMsgDiv {
+	margin-top: 10px;
+}
+
+
+.return a:link, .return a:visited {
+	border-bottom:1px dotted;
+	text-decoration:none;
+}
+
+.submitButton2 {
+	margin: 10px auto;
+	width: 100px;
+	text-align: center;
+}
+.submitButton2 a {
+	border: 0;
+}
+
+th a.up {
+	padding-right:15px;
+	background: url(/appImages/icons/column_sorted_up.gif) no-repeat right center;
+}
+
+th a.down {
+	padding-right:15px;
+	background: url(/appImages/icons/column_sorted.gif) no-repeat right center;
+}
+
+.mapQuestAlert {
+	float: right;
+	font-style: italic;
+	color: #900;
+	width: 400px;
+}
+
+#proximitySearch table {
+	border: 1px solid #ccc;
+}
+#proximitySearch table table {
+	border: 0;
+}
+#proximitySearch td {
+	padding: 5px;
+	vertical-align: middle;
+}
+.alert {
+	font-weight: bold;
+	color: #900;
+}
+
+.saveButton {
+	float: right;
+}
+
+#passwordScorebar {
+	color: #000;
+    font-weight: bold;
+	text-align: center;
+    padding-top: 2px;
+    background: #eee;
+	border: 1px solid #aaa;
+}
+
+
+table.policy {
+	border: 1px solid #ccc;
+	margin-bottom: 10px; 
+}
+
+table.policy th {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	vertical-align: top;
+}
+table.policy td {
+	padding: 5px;
+	vertical-align: top;
+}
+
+
+#current h1 img {
+	display: none;	
+}
+
+#closeButton {
+	margin-top: 10px;
+}
+#closeButton a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: none;
+}
+#closeButton img {
+	margin-left: 5px;
+	display: inline;
+	vertical-align: middle
+}	
+
+
+#seatSearchView {
+	margin: 0 30px;	
+}
+
+
+#logoSeatSearch {
+	background: url(../../images/pvue_logo.gif) no-repeat 0 15px;
+	margin-left: 30px;
+	height: 100px;
+	width: 150px;
+}
+#logoSeatSearch a {
+	border: 0;
+}
+#clientlogoSeatSearch {
+	float: right;
+	margin-right: 30px;
+	margin-top: 15px;
+	
+}
+
+
+.waived {
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 2em;
+}
+
+
+.bannerad {
+	text-align: center;
+	padding: 1.5em 0;
+	margin: 0 auto;
+}
+
+.bannerad a {
+	border: none;	
+}

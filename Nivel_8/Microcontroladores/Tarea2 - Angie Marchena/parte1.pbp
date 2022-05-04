@@ -1,0 +1,22 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 30/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+repe var byte
+led1 var portb.4
+programa:
+    for repe= 1 to 4 ;repetir 5 vrces
+        high led1            ;encender led1
+        pause 2500            ;esperar 2.5 s
+        low led1              ;apagar led
+        pause 500              ;esperar .5 s
+        next
+    pause 2000             ;esperar 2 s
+    
+end

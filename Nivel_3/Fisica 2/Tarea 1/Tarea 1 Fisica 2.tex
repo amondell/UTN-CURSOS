@@ -1,0 +1,221 @@
+\documentclass[letterpaper,12pt,addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage[top=1in, bottom=1in, left=0.75in, right=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{parskip}
+
+\usepackage{varwidth}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\firstpagefooter{}{Página \thepage\ de \numpages}{}
+\runningheadrule
+\runningfooter{}{Página \thepage\ de \numpages}{}
+\definecolor{ceruleanblue}{rgb}{0.16, 0.32, 0.75}
+\begin{document}
+ 
+Emanuel Esquivel Lopez - 2016133597\\
+\textbf{Problema 1:}\\
+
+{\color{ceruleanblue}
+Solución:\\
+\begin{enumerate}
+\item[a] Para calcular el periodo es necesario calcular la frecuencia angular $\omega$:\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+\omega &= \sqrt{\frac{k}{m}}\\
+\omega &= \sqrt{\frac{25}{1}}\\
+\omega &= 5\,\,\mathrm{rad/s}\\
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+T &= \frac{2\pi}{\omega}\\
+T &= \frac{2\pi}{5}
+\end{align*}
+\end{minipage}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$T = 1.256\,\,\mathrm{s}$}
+\end{center}
+
+\item[b] Calculo de valores máximos\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+v_{\max} &= A\omega\\
+v_{\max} &=(0.03) \cdot (0.5)
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$v_{\max} = 0.15\,\,\mathrm{m/s}$}
+\end{center}
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+a_{\max} &= A\omega^2\\
+a_{\max} &=(0.03) \cdot (0.5)^2
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$a_{\max} = 0.75\,\,\mathrm{m/s}^2$}
+\end{center}
+\end{minipage}
+
+
+
+
+\item[c] Posición velocidad y aceleración en función del tiempo
+\begin{align*}
+x(t) &= -A\cos(\omega t)
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$x(t) = -3\cos(5t)\,\,\mathrm{cm}$}
+\end{center}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+v(t) &= \frac{dx}{dt}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$v(t) = 15\sin(5t)\,\,\mathrm{cm/s}$}
+\end{center}
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+a(t) &= \frac{dv}{dt}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$a(t) = 0.75\cos(5t)\,\,\mathrm{cm/s}^2$}
+\end{center}
+\end{minipage}
+
+
+\end{enumerate}
+}
+\clearpage
+\textbf{Problema 2:}
+
+{\color{ceruleanblue}
+Solución:\\
+\begin{enumerate}
+\item[a] Calculamos la frecuencia angular
+\begin{align*}
+\omega &= \sqrt{\frac{k}{m}}\\
+\omega &= \sqrt{\frac{8}{0.5}}\\
+\omega &= 4\,\,\mathrm{rad/s}\\
+\end{align*}
+Con esto podemos determinar $x(t)$
+\begin{align*}
+x(t) &= 10\sen(4 t)\,\,\mathrm{cm}
+\end{align*}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+v(t) &= \frac{dx}{dt}=40\cos(4t)\,\,\mathrm{cm/s}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$v_{\max} = 40\,\,\mathrm{cm/s}$}
+\end{center}
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+a(t) &= \frac{dv}{dt}=-160\sen(4t)\,\,\mathrm{cm/s^2}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$a_{\max} = 160\,\,\mathrm{cm/s^2}$}
+\end{center}
+\end{minipage}
+
+\item[b] Para calcular rapidez y aceleración cuando $x=6$ cm, calculamos $t$
+
+\begin{align*}
+6 &= 10\sen(4 t)\,\,\mathrm{cm}\\
+t &= 0.160\,\,\mathrm{s}
+\end{align*}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+v(0.160) &=40\cos(4\cdot(0.160))\,\,\mathrm{cm/s}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$v(0.160) = 32.08\,\,\mathrm{cm/s}$}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+a(0.160) &=-160\sen(4\cdot(0.160))\,\,\mathrm{cm/s^2}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$a(0.160) = -95.5\,\,\mathrm{cm/s^2}$}
+\end{center}
+\end{minipage}
+
+\item[c] Como sabemos en $x=0$ el tiempo es 0, si calculamos el tiempo en 8 cm
+\begin{align*}
+8 &= 10\sen(4 t)\,\,\mathrm{cm}\\
+t &= 0.231\,\,\mathrm{s}
+\end{align*}
+Por lo que obtenemos que $\Delta t$
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$\Delta t= 0.231\,\,\mathrm{s}$}
+\end{center}
+\end{enumerate}
+}
+
+\clearpage
+\textbf{Problema 3:}
+
+
+{\color{ceruleanblue}
+Solución:\\
+\begin{enumerate}
+\item[a] Debemos tener la frecuencia en rad/s
+
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+\omega &= 0.5\,\,\mathrm{rev/s}\\
+\omega &= \frac{0.5\,\,\mathrm{rev}}{1\,\,\mathrm{s}} \cdot\frac{2\pi\,\,\mathrm{rad}}{1\,\,\mathrm{rev}}\\
+\omega &=\pi\,\,\mathrm{rad/s}
+\end{align*}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{align*}
+T &= \frac{2\pi}{\omega}\\
+T &= \frac{2\pi}{\pi}
+\end{align*}
+\end{minipage}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$T = 2\,\,\mathrm{cm/s}$}
+\end{center}
+\item[b] Para determinar la frecuencia tenemos que:
+\begin{align*}
+f &=\frac{1}{T}\\
+f &=\frac{1}{02}
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$f = 0.5\,\,\mathrm{Hz}$}
+\end{center}
+\item[c] La amplitud A es
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$A = 30\,\,\mathrm{cm}$}
+\end{center}
+\item[d] Ecuación de desplazamiento en función del tiempo:
+\begin{align*}
+x(t) &= A\sen(\omega t \pm \phi) 
+\end{align*}
+\begin{center}
+\fcolorbox{ceruleanblue}{white}{$x(t) = 0.3\sen(\pi t) \,\mathrm{m}$}
+\end{center}
+
+
+\end{enumerate}
+}
+\end{document}

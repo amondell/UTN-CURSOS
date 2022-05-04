@@ -1,0 +1,43 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 30/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+
+trisb=0
+parpadeo var byte
+
+inicio:
+    for  parpadeo=1 to 6 ; repetir hasta 6 veces
+    low portb.1           ; apagar puerto b1
+    high portb.0     ; encender b0
+    pause 300  ;esperar .3
+    toggle portb.0   ;cambiar al puerto b0
+    pause 300; esperar .3
+next
+
+    for parpadeo= 1 to 2 ; repetir hasta 2 veces
+    portb = %00000011   ;encender ambos puertos
+    pause 1000          ;esperar 1 min
+    portb = %00000000      ;apagar los puertos
+    pause 1000             ;esperar  1 s
+next
+
+    for parpadeo = 1 to 3   ; repetir hasta 3 veces
+    portb = %00000011       ;encender ambos puertos
+    pause 300              ;esperar 1 min
+    portb = %00000000         ;apagar los puertos
+    pause 300                       ;esperar  .3 min
+next
+goto inicio
+    
+
+    
+    
+  
+ end

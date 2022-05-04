@@ -1,0 +1,46 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 21/10/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+DEFINE osc 4
+inicio:
+    trisb=%00000000 ;INDICA QUE LOS PINES B CORRESPONDEN A PUERTOS DE SALIDA
+
+leds1:              ;INICIO DEL PROGRAMA   
+    portb=%00000001 ; ENCIENDE RB0 y led 0
+    pause 500       ;PAUSA EL ENCENDIDO .5 SEGUNDOS
+    portb=%00000010 ;ENCIENDE RB1  y led 1
+    pause 500       ;PAUSA EL ENCENDIDO 0.5 SEGUNDOS
+    portb=%00000100  ;ENCIENDE RB2   y led 2                      
+    pause 500        ;PAUSA EL ENCENDIDO .5 SEGUNDOS  
+    portb=%00001000  ;ENCIENDE RB3   y led 3
+    pause 500       ; PAUSA EL ENCENDIDO 0.5 SEGUNDOS
+    portb=%00000100  ;ENCIENDE RB2 Y  LED 2
+    pause 500       ;PAUSA EL ENCENDIDO .5 SEGUNDOS  
+    portb=%00000010 ;ENCIENDE RB1 Y LED 1
+    pause 500        ;PAUSA EL ENCENDIDO .5 SEGUNDOS  
+    portb=%00000001   ;ENCIENDE RB0 Y LED 0
+    pause 500        ;PAUSA EL ENCENDIDO .5 SEGUNDOS  
+    portb=%00000000  
+    goto leds2        ;VA A LA RUTINA DE LEDS2 
+    
+leds2: 
+    portb=%00010000 ; ENCIENDE RB4
+    pause 500       ;PAUSA EL ENCENDIDO .5 SEGUNDOS
+    portb=%00100000  ;ENCIENDE RB5
+    pause 500       ;PAUSA EL ENCENDIDO 0.5 SEGUNDOS
+    portb=%01000000  ;ENCIENDE RB6                       
+    pause 500       ;PAUSA EL ENCENDIDO .5 SEGUNDOS  
+    portb=%10000000 ;  ENCIENDE RB7
+    pause 500       ;PAUSA EL ENCENDIDO 0.5 SEGUNDOS
+    goto inicio     ;SE REGRESA A LA RUTINA DE INICIO
+    
+   
+    return
+    
+end

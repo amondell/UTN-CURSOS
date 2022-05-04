@@ -1,0 +1,68 @@
+\documentclass{article}
+  \usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+  %Paquetes adicionales
+  \usepackage{latexsym,amsmath,amssymb,amsfonts}
+  \usepackage[latin1]{inputenc}
+  %\usepackage{txfonts}
+  \usepackage[T1]{fontenc}\usepackage{ae,aecompl}
+  \usepackage{graphicx}
+  \usepackage[usenames]{color}
+  \usepackage[spanish]{babel} % Idioma español
+  \usepackage{tcolorbox}
+\usepackage{multirow}
+\tcbuselibrary{theorems}
+  %---------------comandos especiales-------------------------------
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\C}{\mathbb{C}}
+  \newcommand{\N}{\mathbb{N}}
+  \newcommand{\I}{\mathbb{I}}
+  \newcommand{\F}{\mathbb{F}}
+  %-----------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[R]{Emanuel Esquivel L.}
+\begin{document}
+
+
+{\sc Calculo III} 
+
+{\sc Emanuel Esquivel L.} \hfill   
+\begin{center}
+{\sc \textbf{Formulas importantes}}\\
+\end{center}
+\textbf{Longitud de una curva}\\
+Consideremos la curva parametrica $C(t)$ definida como:
+$$C(t)=\left\{\begin{matrix}
+x(t) & \\ 
+y(t) & \\ 
+z(t) & 
+\end{matrix}\right.$$
+con $t\in[a,b]$\\
+La longitud de la curva esta dada por:
+\begin{align*}
+\int_a^b \sqrt{(x'(t))^2+(y'(t))^2+(z'(t))^2}\,dt
+\end{align*}
+
+\noindent \textbf{Recta tangente}\\
+Consideremos la curva parametrica $C(t)$ definida como:
+$$C(t)=\left\{\begin{matrix}
+x(t) & \\ 
+y(t) & \\ 
+z(t) & 
+\end{matrix}\right.$$
+con $t\in[a,b]$, y un punto de tangencia $P(x_0,y_0,z_0)$\\
+La recta tangente a la curva $C$ en $P$ se deduce como:
+$$r(t)=\left\{\begin{matrix}
+x &=& x_0+t\cdot x'(t_{x}) \\ 
+y &=& y_0+t\cdot y'(t_y)\\ 
+z &=& z_0+t\cdot z'(t_z)
+\end{matrix}\right.$$ 
+Donde el valor de $t_x, t_y$ y $t_z$ se averigua resolviendo las ecuaciones:
+$$\left\{\begin{matrix}
+x_0&=& x(t_x) \\ 
+y_0 &=& y(t_y)\\ 
+z_0 &=& z(t_z)
+\end{matrix}\right.$$ 
+\end{document}

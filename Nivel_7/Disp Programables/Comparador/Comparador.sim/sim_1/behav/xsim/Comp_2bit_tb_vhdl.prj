@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Comparador.srcs/sources_1/imports/Archivos de ejemplo clase 3-20210530/Comp_2bit.vhd" \
+"../../../../Comparador.srcs/sources_1/new/Comp_2bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

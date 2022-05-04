@@ -1,0 +1,25 @@
+'****************************************************************
+'*  Name    : ANGIE MARCHENA                                     *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 28/09/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'************************************************************
+DEFINE osc 4
+inicio:
+    trisb=%000000 ;INDICA QUE LOS PINES B CORRESPONDEN A PUERTOS DE SALIDA
+semaforo:    ;INICIO DEL PROGRAMA   
+    portb=%100001 ; ENCIENDE RB0 Y  RB5
+    pause 500    ;PAUSA EL ENCENDIDO .5 SEGUNDOS
+    portb=%100010  ;ENCIENDE RB1 Y RB5
+    pause 500     ;PAUSA EL ENCENDIDO 0.8 SEGUNDOS
+    portb=%001100  ;ENCIENDE RB2 Y RB3                         
+    pause 500    ;PAUSA EL ENCENDIDO .5 SEGUNDOS
+    portb=%010100;  ENCIENDE RB4 Y RB2
+    pause 500    ;PAUSA EL ENCENDIDO 0.8 SEGUNDOS
+    goto semaforo ;SE REGRESA A LA RUTINA DE SEMAFORO 
+    
+end

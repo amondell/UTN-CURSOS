@@ -1,0 +1,54 @@
+'****************************************************************
+'*  Name    : UNTITLED.BAS                                      *
+'*  Author  : [select VIEW...EDITOR OPTIONS]                    *
+'*  Notice  : Copyright (c) 2021 [select VIEW...EDITOR OPTIONS] *
+'*          : All Rights Reserved                               *
+'*  Date    : 21/10/2021                                        *
+'*  Version : 1.0                                               *
+'*  Notes   :                                                   *
+'*          :                                                   *
+'****************************************************************
+
+botsubir VAR portb.1 ; pin B1
+botbajar VAR portb.2 ; pin B2
+
+LED VAR portb.3  ;nombre para el pin B3
+FREC VAR BYTE    ;variable FREC 
+bandera VAR BIT  ;variable bandera de 1 bit
+
+FREC = 228        ;valor inicial para la frecuencia.
+
+HIGH LED         ;encender el led para saber que ya inicio el pwm
+PAUSE 500        ;por medio segundo
+LOW LED          ;apagar el led
+
+PROGRAMA:
+    PWM PORTB.0,FREC,3        ;sacar PWM 3 ciclos de 288 Hz, con esto se asegura de tener
+                              ;w 90% alto, 10% bajo. 
+    LOW LED                   ;apagar led
+    IF botsubir =0 THEN SUBIR ;pulsar para forzar alto
+    IF botbajar =0 THEN BAJAR ;pulsar para forzar bajo
+    bandera =0                ; bandera carga a 0
+    GOTO PROGRAMA
+
+SUBIR:
+    IF FREC > 249 THEN aviso ;si supera a 249 ir a aviso
+    IF bandera = 1 THEN PROGRAMA ;si la bandera esta en 1 salir
+    HIGH LED                 ;encender el led
+    bandera=1                ;cargar la bandera con 1
+    FREC = FREC +25          ;sumar 25 a la variable FREC
+    GOTO PROGRAMA            ;regresar a programa
+
+BAJAR:
+    IF FREC < 26 THEN aviso    ; ir aviso si esta en 26
+    IF bandera = 1 THEN PROGRAMA   ;salir cuando la bandera esta 1
+    HIGH LED                   ;encender el led
+    bandera=1               ;cargar la bandera con1 
+    FREC = FREC -25         ;resta 25 a la variable FREC
+    GOTO PROGRAMA           ;ir a programa
+    
+aviso:
+    HIGH LED                ;enciende el led   que indica el inicio del programa
+    GOTO PROGRAMA           ;ir a programa
+
+    END
